@@ -1,0 +1,21 @@
+# Passwortschutz für die interne Vorschau (Apache 2.4+)
+AuthType Basic
+AuthName "KI.mit.UNS - interne Vorschau"
+# WICHTIG: absoluten Serverpfad zur .htpasswd eintragen, siehe README-Hinweis
+AuthUserFile /ABSOLUTER/SERVERPFAD/ZU/.htpasswd
+Require valid-user
+
+# .htpasswd selbst nie öffentlich ausliefern
+<Files ".htpasswd">
+    Require all denied
+</Files>
+
+# --- Falls der Server noch Apache 2.2 nutzt, stattdessen diesen Block verwenden ---
+# AuthType Basic
+# AuthName "KI.mit.UNS - interne Vorschau"
+# AuthUserFile /ABSOLUTER/SERVERPFAD/ZU/.htpasswd
+# require valid-user
+# <Files ".htpasswd">
+#     Order allow,deny
+#     Deny from all
+# </Files>
