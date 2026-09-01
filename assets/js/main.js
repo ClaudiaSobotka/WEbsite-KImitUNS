@@ -97,23 +97,23 @@
       form.querySelector("#field-consent").closest(".form-field").classList.remove("has-error");
 
       if (!name.value.trim()) {
-        setError(name.closest(".form-field"), "Bitte geben Sie Ihren Namen ein.");
+        setError(name.closest(".form-field"), "Bitte gib Deinen Namen ein.");
         isValid = false;
       }
 
       var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
-        setError(email.closest(".form-field"), "Bitte geben Sie eine gültige E-Mail-Adresse ein.");
+        setError(email.closest(".form-field"), "Bitte gib eine gültige E-Mail-Adresse ein.");
         isValid = false;
       }
 
       if (!message.value.trim()) {
-        setError(message.closest(".form-field"), "Bitte beschreiben Sie kurz Ihre Frage oder Herausforderung.");
+        setError(message.closest(".form-field"), "Bitte beschreibe kurz Deine Frage oder Herausforderung.");
         isValid = false;
       }
 
       if (!consent.checked) {
-        setError(consent.closest(".form-field"), "Bitte stimmen Sie der Datenschutzhinweis-Kenntnisnahme zu.");
+        setError(consent.closest(".form-field"), "Bitte stimme der Datenschutzhinweis-Kenntnisnahme zu.");
         isValid = false;
       }
 
@@ -130,7 +130,7 @@
         status.classList.add("form-status--success", "is-visible");
         form.reset();
       } else {
-        status.textContent = "Bitte prüfen Sie die markierten Felder.";
+        status.textContent = "Bitte prüfe die markierten Felder.";
         status.classList.add("form-status--error", "is-visible");
       }
       status.setAttribute("tabindex", "-1");

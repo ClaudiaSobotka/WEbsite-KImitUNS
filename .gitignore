@@ -1,6 +1,13 @@
 # Rohquellen und interne Arbeitsdateien – bewusst nicht im Repository
 Masterprompt_KI-mit-UNS_Claude-Code.md
 *.odt
-Website KImitUNS.pdf
+*.docx
+Website KImitUNS*.pdf
+KImitUNS-Aenderungsdokumentation*.pdf
+KImitUNS-Website-Vorschau/
+KImitUNS-Website-Vorschau.zip
 Promo INSTA SLIDE KI.mit.UNS/
+Logo KimitUNs/
+Logo KimitUNs.zip
 .claude/
+desktop.ini

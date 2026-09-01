@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Team – KI.mit.UNS</title>
-  <meta name="description" content="Lernen Sie die sechs Teammitglieder von KI.mit.UNS kennen: ihre Schwerpunkte, ihre Erfahrung und wie sie zum Team beitragen. [Entwurf]" />
+  <meta name="description" content="Lerne die sechs Teammitglieder von KI.mit.UNS kennen: ihre Schwerpunkte, ihre Erfahrung und wie sie zum Team beitragen. [Entwurf]" />
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/tokens.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -15,14 +15,7 @@
   <header class="site-header">
     <div class="container site-header__bar">
       <a class="logo" href="index.html">
-        <svg class="logo__icon" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
-          <rect x="4" y="4" width="72" height="72" rx="18" fill="#00357A" />
-          <line x1="20" y1="56" x2="52" y2="24" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
-          <circle cx="20" cy="56" r="6.5" fill="#ffffff" />
-          <circle cx="36" cy="40" r="6.5" fill="#ffffff" />
-          <circle cx="52" cy="24" r="7.5" fill="#F6612D" />
-        </svg>
-        <span class="logo__word">KI<span class="dot">.</span><span class="mit">mit</span><span class="dot">.</span>UNS</span>
+        <img class="logo__image" src="assets/images/logo-header.svg" alt="KI.mit.UNS" />
       </a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="main-nav">
         <svg class="nav-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
@@ -47,88 +40,166 @@
       <div class="container">
         <span class="eyebrow">Team</span>
         <h1>Sechs Menschen, ein Team</h1>
-        <p class="lead">Jedes Teammitglied bringt eine eigene berufliche Geschichte mit. Zusammen ergeben diese Geschichten ein Team, das KI aus vielen Blickwinkeln verständlich macht.</p>
+        <p class="lead">Jedes Teammitglied bringt eine eigene berufliche Geschichte mit.<br />Zusammen ergeben diese Geschichten ein Team, das KI aus vielen Blickwinkeln verständlich macht.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" style="padding-top:var(--space-md);">
       <div class="container">
-        <div class="grid grid--3">
+        <div class="team-grid">
 
           <article class="team-card">
-            <div class="team-card__photo">
-              <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
-              <span class="visually-hidden">Foto von Bianca folgt</span>
+            <div class="team-card__area team-card__area--photo">
+              <div class="team-card__photo">
+                <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
+                <span class="visually-hidden">Foto von Bianca folgt</span>
+              </div>
+              <div class="team-card__identity">
+                <h3>Bianca Balkenhol</h3>
+                <p class="team-card__role">Hotel- und Restaurantfachfrau, AI Implementation Architect</p>
+              </div>
             </div>
-            <div class="team-card__body">
-              <h3>Bianca</h3>
-              <p class="team-card__role">Hotel- und Restaurantfachfrau, AI Implementation Architect i. W.</p>
-              <p class="team-card__desc">25 Jahre Erfahrung in Gastronomie und Hotellerie: Service, Rezeption, Verkauf und Ausbildung.</p>
+            <div class="team-card__area team-card__area--focus">
+              <p class="team-card__focus">Service, Rezeption, Verkauf und Ausbildung in Gastronomie und Hotellerie.</p>
+            </div>
+            <div class="team-card__area team-card__area--competencies">
+              <ul class="team-card__tags">
+                <li>Eventmanagement</li>
+                <li>Kundenberatung</li>
+              </ul>
+            </div>
+            <div class="team-card__area team-card__area--cta">
+              <p class="team-card__short">Langjährige Erfahrung in Gastronomie und Hotellerie.</p>
               <a class="team-card__link" href="team/bianca.html">Profil ansehen</a>
             </div>
           </article>
 
           <article class="team-card">
-            <div class="team-card__photo">
-              <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
-              <span class="visually-hidden">Foto von Carola folgt</span>
+            <div class="team-card__area team-card__area--photo">
+              <div class="team-card__photo">
+                <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
+                <span class="visually-hidden">Foto von Carola folgt</span>
+              </div>
+              <div class="team-card__identity">
+                <h3>Carola Brandes</h3>
+                <p class="team-card__role">Kaufmännische Prozess- &amp; Kundenservice-Expertin, AI Implementation Architect</p>
+              </div>
             </div>
-            <div class="team-card__body">
-              <h3>Carola <span class="draft-note" style="display:inline;">(vollständiger Name zu bestätigen)</span></h3>
-              <p class="team-card__role">Kaufmännische Prozess- &amp; Kundenservice-Expertin, AI Implementation Architect i. W.</p>
-              <p class="team-card__desc">Rund 30 Jahre Order-to-Cash-Praxis und die Fähigkeit, komplexe Sachverhalte verständlich zu erklären.</p>
+            <div class="team-card__area team-card__area--focus">
+              <p class="team-card__focus">Kaufmännische Auftrags- und Rechnungsprozesse verständlich strukturieren und optimieren.</p>
+            </div>
+            <div class="team-card__area team-card__area--competencies">
+              <ul class="team-card__tags">
+                <li>Order-to-Cash</li>
+                <li>Prozessoptimierung</li>
+              </ul>
+            </div>
+            <div class="team-card__area team-card__area--cta">
+              <p class="team-card__short">Langjährige Order-to-Cash-Praxis.</p>
               <a class="team-card__link" href="team/carola.html">Profil ansehen</a>
             </div>
           </article>
 
           <article class="team-card">
-            <div class="team-card__photo">
-              <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
-              <span class="visually-hidden">Foto von Cindy folgt</span>
+            <div class="team-card__area team-card__area--photo">
+              <div class="team-card__photo">
+                <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
+                <span class="visually-hidden">Foto von Cindy folgt</span>
+              </div>
+              <div class="team-card__identity">
+                <h3>Cindy Haase</h3>
+                <p class="team-card__role">Vertriebsinnendienst, Lauf-Influencerin &amp; Community-Lead, AI Implementation Architect</p>
+              </div>
             </div>
-            <div class="team-card__body">
-              <h3>Cindy <span class="draft-note" style="display:inline;">(vollständiger Name zu bestätigen)</span></h3>
-              <p class="team-card__role">Vertriebsinnendienst, Lauf-Influencerin &amp; Community-Lead, AI Implementation Architect i. W.</p>
-              <p class="team-card__desc">20 Jahre B2B-Vertrieb, dazu eigene Erfahrung im Aufbau einer Content- und Community-Marke.</p>
+            <div class="team-card__area team-card__area--focus">
+              <p class="team-card__focus">Kundenservice und B2B-Vertriebsinnendienst sowie Sportcontent.</p>
+            </div>
+            <div class="team-card__area team-card__area--competencies">
+              <ul class="team-card__tags">
+                <li>B2B-Vertrieb</li>
+                <li>Content-Strategie</li>
+              </ul>
+            </div>
+            <div class="team-card__area team-card__area--cta">
+              <p class="team-card__short">Langjährige Erfahrung im B2B-Vertrieb, dazu eigene Content- und Community-Marke.</p>
               <a class="team-card__link" href="team/cindy.html">Profil ansehen</a>
             </div>
           </article>
 
           <article class="team-card">
-            <div class="team-card__photo">
-              <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
-              <span class="visually-hidden">Foto von Claudia folgt</span>
+            <div class="team-card__area team-card__area--photo">
+              <div class="team-card__photo">
+                <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
+                <span class="visually-hidden">Foto von Claudia folgt</span>
+              </div>
+              <div class="team-card__identity">
+                <h3>Claudia Sobotka</h3>
+                <p class="team-card__role">AI Implementation Architect</p>
+              </div>
             </div>
-            <div class="team-card__body">
-              <h3>Claudia <span class="draft-note" style="display:inline;">(vollständiger Name zu bestätigen)</span></h3>
-              <p class="team-card__role">AI Implementation Architect</p>
-              <p class="team-card__desc">Mehr als 20 Jahre Finanzbuchhaltung und Führungserfahrung, übersetzt in KI-gestützte Systeme.</p>
+            <div class="team-card__area team-card__area--focus">
+              <p class="team-card__focus">Mehr als 20 Jahre Finanzbuchhaltung und Führungserfahrung, übersetzt in KI-gestützte Systeme.</p>
+            </div>
+            <div class="team-card__area team-card__area--competencies">
+              <ul class="team-card__tags">
+                <li>KI-Automatisierung</li>
+                <li>Digitalisierung</li>
+              </ul>
+            </div>
+            <div class="team-card__area team-card__area--cta">
+              <p class="team-card__short">Done-for-You-KI-Systeme, die spürbar entlasten.</p>
               <a class="team-card__link" href="team/claudia.html">Profil ansehen</a>
             </div>
           </article>
 
           <article class="team-card">
-            <div class="team-card__photo">
-              <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
-              <span class="visually-hidden">Foto von Elbert folgt</span>
+            <div class="team-card__area team-card__area--photo">
+              <div class="team-card__photo">
+                <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
+                <span class="visually-hidden">Foto von Elbert folgt</span>
+              </div>
+              <div class="team-card__identity">
+                <h3>Elbert Valkenburg</h3>
+                <p class="team-card__role">Wirtschaftsprüfer RA (Niederlande), CFO &amp; Interimmanager, AI Implementation Architect</p>
+              </div>
             </div>
-            <div class="team-card__body">
-              <h3>Elbert <span class="draft-note" style="display:inline;">(vollständiger Name zu bestätigen)</span></h3>
-              <p class="team-card__role">Wirtschaftsprüfer RA (Niederlande), CFO &amp; Interimmanager</p>
-              <p class="team-card__desc">Mehr als 30 Jahre Wirtschaftsprüfung und Finance, heute Interim-CFO für Mittelstand und Scale-ups.</p>
+            <div class="team-card__area team-card__area--focus">
+              <p class="team-card__focus">Interim-CFO für Mittelstand und Scale-ups, Ordnung in der Finanzfunktion.</p>
+            </div>
+            <div class="team-card__area team-card__area--competencies">
+              <ul class="team-card__tags">
+                <li>Cash-Management</li>
+                <li>Budget &amp; KPI</li>
+              </ul>
+            </div>
+            <div class="team-card__area team-card__area--cta">
+              <p class="team-card__short">Langjährige Erfahrung in Wirtschaftsprüfung und Finance.</p>
               <a class="team-card__link" href="team/elbert.html">Profil ansehen</a>
             </div>
           </article>
 
           <article class="team-card">
-            <div class="team-card__photo">
-              <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
-              <span class="visually-hidden">Foto von Brix folgt</span>
+            <div class="team-card__area team-card__area--photo">
+              <div class="team-card__photo">
+                <svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><circle cx="50" cy="38" r="20" fill="currentColor" /><path d="M14 92c4-24 24-38 36-38s32 14 36 38" fill="currentColor" /></svg>
+                <span class="visually-hidden">Foto von Tamara Brix folgt</span>
+              </div>
+              <div class="team-card__identity">
+                <h3>Tamara Brix</h3>
+                <p class="team-card__role">Visual Merchandiserin, Social Media Managerin, AI Implementation Architect</p>
+              </div>
             </div>
-            <div class="team-card__body">
-              <h3>Brix <span class="draft-note" style="display:inline;">(Name zu bestätigen)</span></h3>
-              <p class="team-card__role">Visual Merchandiserin, Social Media Managerin, AI Implementation Architect i. W.</p>
-              <p class="team-card__desc">Langjährige Praxis in Verkaufsförderung, Design und Branding, online und offline.</p>
+            <div class="team-card__area team-card__area--focus">
+              <p class="team-card__focus">Design, Branding, Visuals und Verkaufsförderung mithilfe von KI-Systemen.</p>
+            </div>
+            <div class="team-card__area team-card__area--competencies">
+              <ul class="team-card__tags">
+                <li>Design &amp; Branding</li>
+                <li>Verkaufsförderung</li>
+              </ul>
+            </div>
+            <div class="team-card__area team-card__area--cta">
+              <p class="team-card__short">Langjährige Praxis in Verkaufsförderung, online und offline.</p>
               <a class="team-card__link" href="team/brix.html">Profil ansehen</a>
             </div>
           </article>
@@ -142,13 +213,20 @@
         <div class="section-head">
           <span class="eyebrow">Unser Umfeld</span>
           <h2>Wo unser Team zu Hause ist</h2>
-          <p class="lead">Im Miro-Board war eine Landkarte mit dem Umfeld des Teams vorgesehen. Da noch nicht für alle Standorte eine Freigabe vorliegt, zeigen wir hier zunächst einen Platzhalter ohne externe Kartendienste, Tracking oder Einbettung.</p>
+          <p class="lead">Im Miro-Board war eine Landkarte mit dem Umfeld des Teams vorgesehen. Für den Erstentwurf zeigen wir die bestätigten Postleitzahlen als Orientierung – noch ohne externe Kartendienste, Tracking oder Einbettung.</p>
         </div>
         <div class="map-placeholder">
           <div class="map-placeholder__inner">
-            <h3>Standortübersicht folgt</h3>
-            <p>Bestätigter Standort: Elbert – Erkelenz, Deutschland.</p>
-            <p class="draft-note">Alle weiteren Standorte: [INHALT NOCH ERGÄNZEN]. Keine Google-Maps-Einbettung im Erstentwurf.</p>
+            <h3>Standorte unseres Teams</h3>
+            <ul class="fact-list" style="text-align:left; display:inline-block;">
+              <li>Bianca Balkenhol – PLZ 59846</li>
+              <li>Carola Brandes – PLZ 30926</li>
+              <li>Cindy Haase – PLZ 80798</li>
+              <li>Claudia Sobotka – PLZ 22880</li>
+              <li>Elbert Valkenburg – Erkelenz, Deutschland (PLZ 41812)</li>
+              <li>Tamara Brix – PLZ 24857</li>
+            </ul>
+            <p class="draft-note">Eine echte Kartendarstellung folgt später, weiterhin ohne externe Kartendienste oder Tracking.</p>
           </div>
         </div>
       </div>
@@ -159,17 +237,20 @@
     <div class="container">
       <div class="site-footer__grid">
         <div>
-          <a class="logo" href="index.html">
-            <svg class="logo__icon" viewBox="0 0 80 80" aria-hidden="true" focusable="false">
-              <rect x="4" y="4" width="72" height="72" rx="18" fill="#ffffff" fill-opacity="0.12" />
-              <line x1="20" y1="56" x2="52" y2="24" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
-              <circle cx="20" cy="56" r="6.5" fill="#ffffff" />
-              <circle cx="36" cy="40" r="6.5" fill="#ffffff" />
-              <circle cx="52" cy="24" r="7.5" fill="#F6612D" />
-            </svg>
-            <span class="logo__word">KI.mit.UNS</span>
+          <a class="logo logo--on-dark" href="index.html">
+            <img class="logo__image" src="assets/images/logo-header.svg" alt="KI.mit.UNS" />
           </a>
-          <p class="lead" style="margin-top:1rem;max-width:26rem;">Wir helfen Unternehmen, KI sinnvoll im Arbeitsalltag einzusetzen.</p>
+          <p class="site-footer__claim">Wir helfen Unternehmen, KI sinnvoll im Arbeitsalltag einzusetzen.</p>
+          <div class="site-footer__social">
+            <span class="social-btn">
+              <svg class="social-btn__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 00-7.8 13.5L3 21l4.7-1.2A9 9 0 1012 3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" /></svg>
+              WhatsApp <span class="social-btn__status">(Link folgt)</span>
+            </span>
+            <span class="social-btn">
+              <svg class="social-btn__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6" /><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg>
+              Instagram <span class="social-btn__status">(Link folgt)</span>
+            </span>
+          </div>
         </div>
         <div>
           <h2>Seiten</h2>

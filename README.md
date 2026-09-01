@@ -71,15 +71,13 @@ Nicht automatisiert getestet (im Rahmen dieses Erstentwurfs keine Testumgebung/C
 
 - Finale Hauptüberschrift der Startseite (siehe Vorschläge oben)
 - Finale Akzentfarbpalette / Bestätigung der drei Hex-Codes anhand der Original-Logoquelle
-- Vollständige, bestätigte Namen aller sechs Teammitglieder (inkl. Klärung „Brix“ vs. „Tamara Brix“)
 - Vollständige/korrekte E-Mail-Adresse von Claudia
-- Fotos von Bianca, Claudia (Shooting laut Planung am 24.07.2026) und Brix
-- Separate, freigegebene Porträtdateien von Carola, Cindy und Elbert
-- Offizielles Logo als finale SVG/PNG-Datei
-- Standorte aller Teammitglieder für die Teamkarte (bestätigt bisher nur: Elbert – Erkelenz, Deutschland)
-- Offizielle Instagram- und WhatsApp-Ziele
+- Fotos von Bianca, Claudia (Shooting laut Planung am 24.07.2026), Brix – sowie Carola, Cindy und Elbert: Im Projektordner liegt weiterhin keine separate, freigegebene Porträtdatei vor (auch nicht für Cindy, obwohl im Teamfeedback danach gefragt wurde)
+- Offizielles Logo als finale SVG/PNG-Datei (im Projektordner weiterhin keine eigenständige Originaldatei auffindbar, nur das rekonstruierte Motiv aus den Promo-SVGs)
+- Standorte aller Teammitglieder für die Teamkarte (bestätigt bisher nur: Elbert – Erkelenz, Deutschland; für die übrigen fünf liegen jetzt PLZ-Angaben vor, siehe Teamprofile)
+- Offizielle Instagram- und WhatsApp-Ziele (Footer-Buttons sind seit der Optimierungsrunde vorbereitet, aber bewusst nicht verlinkt)
 - Echte Kundenstimmen inkl. Veröffentlichungsfreigaben (`kundenfeedback.html` zeigt bewusst nur ein Konzept)
-- Vollständige Projektbeschreibungen und -ergebnisse (`projekte.html`)
+- Vollständige Projektbeschreibungen und -ergebnisse (`projekte.html`, inkl. der beiden neuen Projekte „EU AI Act & DSGVO Check“ und „Checkliste: KI im Unternehmen“)
 - Blogbeiträge und Downloads
 - Anbieterangaben für `impressum.html`
 - Vollständige, rechtlich geprüfte Angaben für `datenschutz.html`
@@ -101,4 +99,32 @@ Auf den Teamprofilseiten (`team/*.html`) sind die im Miro-Board hinterlegten E-M
 
 ## 11. Offene Punkte für Claudia und das Team
 
-Siehe den Abschnitt „Offene Punkte für Claudia und das Team“ am Ende von `Masterprompt_KI-mit-UNS_Claude-Code.md` – dieser bleibt vollständig gültig und wurde durch diesen Entwurf nicht abschließend geklärt, nur strukturell vorbereitet.
+Siehe den Abschnitt „Offene Punkte für Claudia und das Team“ am Ende von `Masterprompt_KI-mit-UNS_Claude-Code.md`. **Update:** Die vollständigen Namen aller sechs Teammitglieder sind inzwischen bestätigt und auf der gesamten Website hinterlegt: Bianca Balkenhol, Carola Brandes, Cindy Haase, Claudia Sobotka, Elbert Valkenburg, Tamara Brix.
+
+## 12. Optimierungsrunde nach Teamfeedback (20.08.2026)
+
+Auf Basis von `Claude-Code-Prompt_ Website KI.mit.UNS – vollständige Optimierungsrunde nach Teamfeedback.md` wurde die bestehende Website überarbeitet, nicht neu erstellt. Wichtigste Änderungen:
+
+- **Du-Ansprache** konsequent auf der gesamten Website umgesetzt (inkl. Formular-Fehlermeldungen in `main.js`)
+- **Teamkarten neu strukturiert:** echtes 3-Spalten-Raster auf Desktop, 4 Bereiche pro Karte (Foto/Name/Rolle, Schwerpunkt max. 3 Zeilen, 2 Kompetenz-Tags, Kurztext + Button) über CSS-Subgrid auf gleicher Höhe ausgerichtet – zentrale Lösung, keine Pixelkorrekturen pro Person
+- **Berufserfahrung** auf allen sechs Personenseiten als Aufzählungspunkte statt Fließtext
+- **Kompetenzseite:** Icons für die 5 Leistungsbereiche ergänzt, neue Zusammenfassung „Was das Team gemeinsam mitbringt“, Instagram/SEO/GEO in Orange hervorgehoben
+- **PLZ ergänzt** bei Bianca (59846), Carola (30926), Cindy (80798), Claudia (22880) und Teammitglied 6/Brix (24857); bestehende E-Mails/Telefonnummern unverändert
+- **Elberts Berufsbezeichnung** um „AI Implementation Architect in Weiterbildung“ erweitert; Claudias Kennzeichnung um „in Weiterbildung“ ergänzt (Konsistenz mit ihrem eigenen Text „als angehende AI Implementation Architect“)
+- **Projekt „EU AI Act & DSGVO Check“** umbenannt (Bezeichnung jetzt bestätigt, vorheriger „noch zu bestätigen“-Hinweis entfernt) und neues Projekt **„Checkliste: KI im Unternehmen“** ergänzt (beide ohne Quellmaterial im Projektordner, daher weiterhin Platzhalter-Inhalte)
+- **„Woran wir arbeiten …“-Formulierung** entfernt (Startseite: „Ausgewählte Projekte“, Projektseite: „Unsere Projekte und Arbeitsbeispiele“)
+- **FAQ „Welche Kosten können entstehen?“** neu beantwortet: erstes Gespräch kostenlos, weitere Kosten transparent nach Umfang
+- **Kontaktbereich vereinfacht:** „Weitere Kontaktwege“ entfernt, Kontaktformular als alleiniger Fokus
+- **WhatsApp/Instagram** als vorbereitete, aber nicht verlinkte Buttons in den Footer aller 18 Seiten verschoben – **OFFEN**: keine bestätigten Accounts/Links im Projektordner vorhanden
+- **Footer-Claim** („Wir helfen Unternehmen …“) ist jetzt weiß und gut lesbar; vorher unbeabsichtigt grau auf Navy (zu geringer Kontrast) durch fehlerhafte Wiederverwendung der `.lead`-Klasse
+- **Worttrennung:** `hyphens: none` statt `hyphens: auto` in Überschriften – `overflow-wrap: break-word` bleibt als Sicherheitsnetz gegen Überlauf bei sehr langen Wörtern erhalten
+- **Markenschreibweise „KI.mit.UNS“** und Logos/Fotos geprüft: Schreibweise war bereits überall korrekt; für Logo und Fotos liegen weiterhin keine neuen Originaldateien im Projektordner vor, daher unverändert
+
+Nicht verändert (bewusst außerhalb des Auftrags): Impressum- und Datenschutz-Texte, rechtliche Platzhalter, Formular-Backend, Preise, Namen, Domain/Hosting.
+
+## 13. Logo- und Projekt-Update (31.08.2026)
+
+- **Original-Logo** aus `Logo KimitUNs/Logo Ki mit Uns (2).zip` wird jetzt verbindlich verwendet (`assets/images/logo-header.svg`, `assets/images/logo-header-on-orange.svg`). Einzige technische Anpassung: das SVG-`viewBox` wurde auf den tatsächlich gezeichneten Bereich zugeschnitten (reiner Ausschnitt der leeren Fläche, keine Pfade/Farben/Proportionen verändert). Logo steht jetzt oben rechts im Header (`flex-direction: row-reverse`); im Footer sitzt es auf einem hellen Hintergrund-Patch, da das Original für helle Flächen gestaltet ist.
+- **Neue Projekte ergänzt:** Grounding Page (aus `Projektbeschreibung GroundingPage.odt`), Bewerbungsmanagement (vollständig, von Elbert bestätigt), Podcast-Erstellung (Status: Konzeptphase, aus `Projektbeschreibung_Podcast_KI_mit_uns(2).docx`), Skill- & Agent-Automatisierung (Sammelkarte für Make/n8n/AI Transformation Compass, noch ohne Einzelbeschreibung).
+- **Kompetenzseite neu geordnet:** „Was das Team gemeinsam mitbringt“ steht jetzt vor den Kompetenzkacheln, feste 2-Spalten-Darstellung, neue 6. Kachel „DSGVO & EU AI Act“, Instagram als Marketing-Einzelkompetenz entfernt (Social Media bleibt, in Orange).
+- **Zertifikate (Punkt 37 des Auftrags):** Trotz Hinweis „Zertifikate sind da“ auf dem Sticky-Note-Board konnte im Projektordner keine Zertifikatsdatei gefunden werden – bleibt offen.
