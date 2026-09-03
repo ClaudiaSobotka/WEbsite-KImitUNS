@@ -81,12 +81,21 @@ p {
   max-width: 68ch;
 }
 
-/* Blocksatz für längere Fließtexte (Profilseiten, Über uns) - Navigation,
-   Buttons, Labels und kurze Karten-/Lead-Texte bleiben bewusst linksbündig. */
-.grid--2 > div > p,
+/* Blocksatz für Fließtext auf der gesamten Website (Miro-Vorgabe). Navigation,
+   Buttons, Labels sowie kurze Karten-, Team-Karten-, Fußzeilen- und Lead-Texte
+   bleiben bewusst linksbündig, damit auf Smartphones keine zu großen
+   Wortabstände entstehen. */
+main p,
 .quote-block {
   text-align: justify;
   hyphens: auto;
+}
+
+.lead,
+.card p,
+.team-card p,
+.site-footer p {
+  text-align: left;
 }
 
 a {
@@ -451,7 +460,6 @@ ol {
 
 .site-header__bar {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   padding-block: var(--space-sm);
