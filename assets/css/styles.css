@@ -81,18 +81,16 @@ p {
   max-width: 68ch;
 }
 
-/* Blocksatz für Fließtext auf der gesamten Website (Miro-Vorgabe). Navigation,
-   Buttons, Labels sowie kurze Karten-, Team-Karten-, Fußzeilen- und Lead-Texte
-   bleiben bewusst linksbündig, damit auf Smartphones keine zu großen
-   Wortabstände entstehen. */
+/* Blocksatz für Fließtext auf der gesamten Website (Miro-Vorgabe), inklusive
+   Lead-Absätze und Karten-Texte. Nur wirklich kurze, label-artige Texte
+   bleiben linksbündig: Team-Karten (sehr schmale Spalten, sonst zu große
+   Wortabstände), Fußzeile, Navigation, Buttons und Badges. */
 main p,
 .quote-block {
   text-align: justify;
   hyphens: auto;
 }
 
-.lead,
-.card p,
 .team-card p,
 .site-footer p {
   text-align: left;
